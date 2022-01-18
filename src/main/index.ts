@@ -18,7 +18,6 @@ class Main {
         try {
 			this.startup();
 		} catch (error) {
-			console.error(error.message); 
 			app.exit(1);
 		}
     }
@@ -30,6 +29,10 @@ class Main {
                 {
                     width: 800,
                     height: 210,
+                    webPreferences: {
+                        nodeIntegration: true,
+                        contextIsolation: false
+                    },
                     frame: false,
                     resizable: true,
                     show: false

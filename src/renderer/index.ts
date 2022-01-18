@@ -1,3 +1,4 @@
-import { greet } from "./components/greet";
+import { Greeter } from "./components/greet";
 
-greet('Lostyn');
+const g = new Greeter('Lostyn', 'smith');
+g.greet();

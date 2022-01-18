@@ -1,8 +1,25 @@
+
 const script = "**/*.{js,ts}";
 const style = "**/*.{sass,scss}";
 const font = "**/*.{eot,svg,ttf,woff,woff2}";
 
-export default {
+export interface IPath {
+    input: {
+        html: string,
+        styles: string,
+        fonts: string,
+        scripts: {[key:string]: string},
+    },
+    output: {
+        baseDir: string,
+        html: string,
+        style: string,
+        fonts: string,
+        script: {[key:string]: string}
+    }
+}
+
+const paths: IPath = {
     input: {
         html: 'src/renderer/index.html',
         styles: `src/${style}`,
@@ -23,3 +40,5 @@ export default {
         }
     }
 }
+
+export default paths;

@@ -2,7 +2,7 @@ import gulp from 'gulp';
 import ts from 'gulp-typescript';
 import paths from './gulp.path';
 
-var tsProject = ts.createProject('./src/tsconfig.json');
+var tsProject = ts.createProject('tsconfig.json');
 
 class Scripts {
     scope: string;
