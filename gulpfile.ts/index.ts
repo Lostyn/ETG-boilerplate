@@ -5,6 +5,7 @@ import scripts from "./scripts";
 import template from "./template";
 import electron from "./electron";
 import styles from "./styles";
+import pack from './pack';
 
 function clean() {
   if (fs.existsSync(paths.output.baseDir))
@@ -29,3 +30,4 @@ const prepare = gulp.series(
 )
 
 export const dev = gulp.series(set("development"), prepare, electron);
+export const build = gulp.series(set("production"), prepare, pack);

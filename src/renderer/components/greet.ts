@@ -1,5 +1,6 @@
 function sealed(target: Function, key: string, index: number):any {
-    console.log(target, key, index);
+    // Ensure use of decorator
+    //console.log(target, key, index);
 }
 
 export class Greeter {
@@ -10,7 +11,9 @@ export class Greeter {
 
     }
 
-    greet():void {
-        console.log(`Hello ${this.name} ${this.lastName}`);
+    greet = () => {
+        var div = document.createElement('div');
+        document.body.appendChild(div);
+        div.innerHTML = `Hello ${this.name} ${this.lastName}`;
     }
 }

@@ -33,7 +33,7 @@ class Main {
                         nodeIntegration: true,
                         contextIsolation: false
                     },
-                    frame: false,
+                    frame: true,
                     resizable: true,
                     show: false
                 }    

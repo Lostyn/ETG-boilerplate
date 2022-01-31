@@ -22,3 +22,12 @@ npm run dev
 
 Auto reload and restart is handle by <a href="https://github.com/Quramy/electron-connect/">electron-connect</a>.  
 Restart is trigger when `src/main` script is modified, and reload when changes append in `src/renderer`, `src/renderer/index.html` or `src/renderer/res` folders.
+
+## Build for distribution
+
+Package the app for `production`:
+```bash
+npm run build
+```
+
+Build is handle by <a href="https://www.electron.build/">Electron builder</a>

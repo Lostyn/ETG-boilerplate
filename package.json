@@ -1,16 +1,18 @@
 {
-  "name": "ts.lostyn.template",
+  "name": "template",
   "version": "1.0.0",
   "description": "",
   "main": "dist/main",
   "scripts": {
-    "dev": "gulp dev --color"
+    "dev": "gulp dev --color",
+    "build": "gulp build --color"
   },
   "author": "Lostyn",
   "license": "ISC",
   "devDependencies": {
     "@types/gulp": "^4.0.9",
     "electron": "^16.0.7",
+    "electron-builder": "^22.14.5",
     "electron-connect": "^0.6.3",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",

@@ -15,6 +15,7 @@ export interface IPath {
         html: string,
         style: string,
         fonts: string,
+        release: string,
         script: {[key:string]: string}
     }
 }
@@ -37,7 +38,8 @@ const paths: IPath = {
         script: {
             main: 'dist/main',
             renderer: 'dist/renderer'
-        }
+        },
+        release: 'release'
     }
 }
 
